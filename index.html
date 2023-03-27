@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebGL Rectangle</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="controls">
+      <label for="fov">Camera angle </label>
+      <input type="number" id="fov" min="1" max="90" step="1" value="45" />
+      <br />
+      <label for="xPosition">Pos. X</label>
+      <input type="range" class="large-slider" id="xPosition" min="0" max="5000" step="1" value="1500" />
+      <span id="xPositionValue">1500 m</span>
+      <br />
+      <label for="yPosition">Pos.Y</label>
+      <input type="range" class="large-slider" id="yPosition" min="-1000" max="1000" step="1" value="0" />
+      <span id="yPositionValue">0 m</span>
+      <br />
+      <label for="zPosition">Pos. Z</label>
+      <input type="range" class="large-slider" id="zPosition" min="1" max="1000" step="1" value="75" />
+      <span id="zPositionValue">0 m</span>
+      <br />
+      <label for="xRotation">Rot. X</label>
+      <input type="range" class="large-slider" id="xRotation" min="-45" max="45" step="1" />
+      <span id="xRotationValue">0 deg</span>
+      <br />
+      <label for="yRotation">Rot. Y</label>
+      <input type="range" class="large-slider" id="yRotation" min="-30" max="30" step="1"  value="0" />
+      <span id="yRotationValue">0 deg</span>
+      <br /> 
+      <label for="zRotation">Rot. Z</label>
+      <input type="range" class="large-slider" id="zRotation" min="-90" max="90" step="1" />
+      <span id="zRotationValue">0 deg</span>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
